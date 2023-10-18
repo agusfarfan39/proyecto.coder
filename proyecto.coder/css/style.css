@@ -369,3 +369,14 @@ footer input {
     align-items: center;
     padding: 2rem;
 }
+
+@media (min-width:768px) {
+    .redes ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+}
+
+
