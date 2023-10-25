@@ -3,8 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Play', sans-serif;
-
-
 }
 
 
@@ -29,7 +27,6 @@ img {
 h1 {
     color: rgb(226, 138, 6);
     font-size: 1.4rem;
-
 }
 
 header {
@@ -380,3 +377,25 @@ footer input {
 }
 
 
+/*  --- Seccion Medios de Pago ---- */
+
+.titulo-pagos {
+    align-self: center;
+}
+
+
+.cajas-pagos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: white;
+
+}
+
+
+.caja-1 {
+    background-color:rgb(226, 138, 6) ;
+    gap: 1rem;
+    border: 1px solid white;
+
+}
