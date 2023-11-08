@@ -1,0 +1,59 @@
+.contenedor-contacto h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .contenedor-contacto {
+    align-items: center;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formulario-contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    gap: 1rem;
+  }
+  
+  .celdas {
+    color: white;
+    background-color: black;
+    border: 3px solid rgb(226, 138, 6);
+    gap: 1rem;
+    padding: 0.2rem;
+  }
+  
+  .espacio-consulta {
+    padding: 3rem;
+  }
+  
+  .boton-contacto {
+    background-color: rgb(226, 138, 6);
+    padding: 0.2rem;
+    margin-top: 0.5rem;
+  }
+  
+  .redes {
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .redes i {
+    display: inline;
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .redes ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      gap: 5rem;
+    }
+  }

@@ -1,0 +1,90 @@
+.portada {
+    padding: 2rem 2rem;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .index-titulo {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  .index-texto {
+    padding-bottom: 3rem;
+    color: white;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    border-bottom: 1px solid white;
+  }
+  
+  @media (min-width: 768px) {
+    .portada {
+      min-height: 80vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+    .index-texto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+      border-bottom: 0;
+    }
+  }
+  h3 {
+    font-size: 1.8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .galeria {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    background-color: black;
+  }
+  
+  .boton-galeria {
+    border: 1px solid white;
+    background-color: rgb(226, 138, 6);
+    padding: 1rem 1rem;
+    margin-top: 1rem;
+    display: inline-block;
+  }
+  
+  .boton-galeria:hover {
+    background-color: black;
+  }
+  
+  @media (min-width: 768px) {
+    .galeria {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem;
+    }
+    .boton-galeria {
+      grid-column: 2/3;
+    }
+  }
+  @media (min-width: 1200px) {
+    header {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+    }
+    h1 {
+      align-self: center;
+      font-size: 2rem;
+    }
+    .barra,
+    .log {
+      font-size: 1.2rem;
+    }
+  }
