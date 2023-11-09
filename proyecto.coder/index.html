@@ -2,20 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Proyecto Coder</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Proyecto Coder</title>
 
 </head>
 
@@ -24,167 +24,154 @@
   <div class="contenedor">
     <header>
 
-      <nav class="navbar navbar-expand-lg bg-body-tertiary d-md-none bg-dark" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Hockey Planet</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+      <h1><a href="index.html">Hockey Planet</a></h1>
+
+      <form class="formulario" action="">
+        <input type="search" placeholder="Busca tus productos aca">
+        <input type="submit" value="Buscar">
+      </form>
+      <div class="botones">
+        <a class="btn" href="./pages/usuario.html"><i class="bi bi-person-add"></i></a>
+
+        <div class="dropdown-center d-sm-none">
+          <button class="btn dropdown-toggle btn-group-sm (226, 138, 6)" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="bi bi-list"></i>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/productos.html">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./pages/medios.html">Medios de pago</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./pages/envios.html">Envíos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./pages/contacto.html">Contacto</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-secondary" type="submit">Search</button>
-            </form>
-          </div>
+          <ul class="dropdown-menu">
+            <li><button class="dropdown-item" type="button"><a href="index.html">Inicio</a></button></li>
+            <li><button class="dropdown-item" type="button"><a href="./pages/productos.html">Productos</a></button></li>
+            <li><button class="dropdown-item" type="button"><a href="./pages/medios.html">Medios de Pago</a></button>
+            </li>
+            <li><button class="dropdown-item" type="button"><a href="./pages/medios.html">Envíos</a></button></li>
+            <li><button class="dropdown-item" type="button"><a href="./pages/contacto.html">Contacto</a></button></li>
+          </ul>
         </div>
+      </div>
+
+
+      <nav>
+        <ul class="barra">
+          <li class="indicador"><a href="index.html">Inicio</a></li>
+          <li><a href="./pages/productos.html">Productos</a></li>
+          <li><a href="./pages/medios.html">Medios de Pago</a></li>
+          <li><a href="./pages/envios.html">Envíos</a></li>
+          <li><a href="./pages/contacto.html">Contacto</a></li>
+        </ul>
       </nav>
-
-        <h1><a href="index.html">Hockey Planet</a></h1>
-
-        <form class="formulario" action="">
-            <input type="search" placeholder="Busca tus productos aca">
-            <input type="submit" value="Buscar">
-        </form>
-
-        <a class="log" href="">Inicia sesion o registrate</a>
-
-
-        <nav>
-            <ul class="barra">
-                <li class="indicador"><a href="index.html">Inicio</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/medios.html">Medios de Pago</a></li>
-                <li><a href="./pages/envios.html">Envíos</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
-</div>
+  </div>
 
 
 
 
-    <main>
-
-        <section class="contenedor portada">
-
-
-            <img src="./img/portada 2.jpg" alt="">
-
-            <div class="index-texto">
-                <h2 class="index-titulo">Somos Hockey Planet</h2>
-                <p class="index-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum error
-                    consequuntur, reiciendis
-                    tempora
-                    vero voluptatibus suscipit placeat asperiores eveniet ea ad mollitia nesciunt eaque incidunt hic!
-                    Quas
-                    blanditiis sunt voluptas.</p>
-            </div>
-
-        </section>
 
 
 
-        <section class="galeria">
+  <main>
 
-            <div>
-                <h3><a href="./pages/productos.html">Palos</a></h3>
-                <a href="./pages/productos.html"><img class="palo" src="./img/palo.grays.jpg" alt="">
-                </a>
-
-            </div>
+    <section class="contenedor portada">
 
 
-            <div>
-                <h3><a href="./pages/productos.html">Calzado</a></h3>
-                <a href="./pages/productos.html">
-                    <img class="botines" src="./img/botines.negros.jpg" alt="">
+      <img src="./img/portada 2.jpg" alt="">
 
-                </a>
+      <div class="index-texto">
+        <h2 class="index-titulo">Somos Hockey Planet</h2>
+        <p class="index-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum error
+          consequuntur, reiciendis
+          tempora
+          vero voluptatibus suscipit placeat asperiores eveniet ea ad mollitia nesciunt eaque incidunt hic!
+          Quas
+          blanditiis sunt voluptas.</p>
+      </div>
 
-            </div>
-
-
-            <div>
-                <h3><a href="./pages/productos.html">Arqueros</a></h3>
-                <a href="./pages/productos.html">
-                    <img class="casco" src="./img/casco.obo.jpg" alt="">
-
-                </a>
-            </div>
-
-            <a class="boton-galeria" href="./pages/productos.html">VER TODO</a>
+    </section>
 
 
 
+    <section class="galeria">
 
-        </section>
+      <div>
+        <h3><a href="./pages/productos.html">Palos</a></h3>
+        <a href="./pages/productos.html"><img class="palo" src="./img/palo.grays.jpg" alt="">
+        </a>
 
-
-    </main>
-
-
-
-    <footer>
-
-
-        <div class="footer-contenedor">
-
-            <div>
-                <h4>Ayuda</h4>
-                <ul>
-                    <li><a href="">Preguntas frecuentes</a></li>
-                    <li><a href="">Garantías</a></li>
-                    <li><a href="">Cambios y devoluciones</a></li>
-                    <li><a href="">Guía de talles</a></li>
-                </ul>
-            </div>
+      </div>
 
 
+      <div>
+        <h3><a href="./pages/productos.html">Calzado</a></h3>
+        <a href="./pages/productos.html">
+          <img class="botines" src="./img/botines.negros.jpg" alt="">
 
-            <div class="footer-horario">
-                <h4>Horarios de atención</h4>
-                <ul>
-                    <li>Lunes a Viernes de 9.00 hs. a 19 hs. </li>
-                    <li>Sabados de 9 hs. a 13 hs.</li>
-                </ul>
-            </div>
+        </a>
+
+      </div>
+
+
+      <div>
+        <h3><a href="./pages/productos.html">Arqueros</a></h3>
+        <a href="./pages/productos.html">
+          <img class="casco" src="./img/casco.obo.jpg" alt="">
+
+        </a>
+      </div>
+
+      <a class="boton-galeria" href="./pages/productos.html">VER TODO</a>
 
 
 
-            <div class="footer-newsletter">
-                <h4>Suscribite a nuestro Newsletter</h4>
-                <p>¿Queres recibir novedades?</p>
-                <input type="email" name="" id="" placeholder="Ingresá tu email">
-            </div>
+
+    </section>
 
 
-        </div>
+  </main>
 
 
-    </footer>
+
+  <footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <div class="footer contenedor">
+
+      <div>
+        <h4>Ayuda</h4>
+        <ul>
+          <li><a href="">Preguntas frecuentes</a></li>
+          <li><a href="">Garantías</a></li>
+          <li><a href="">Cambios y devoluciones</a></li>
+          <li><a href="">Guía de talles</a></li>
+        </ul>
+      </div>
+
+
+
+      <div class="footer-horario">
+        <h4>Horarios de atención</h4>
+        <ul>
+          <li>Lunes a Viernes de 9.00 hs. a 19 hs. </li>
+          <li>Sabados de 9 hs. a 13 hs.</li>
+        </ul>
+      </div>
+
+
+
+      <div class="footer-newsletter">
+        <h4>Suscribite a nuestro Newsletter</h4>
+        <p>¿Queres recibir novedades?</p>
+        <input type="email" name="" id="" placeholder="Ingresá tu email">
+      </div>
+
+
+    </div>
+
+
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -5,8 +5,11 @@
     font-family: 'Play', sans-serif;
 }
 
-main {
-    height: 80 vh;
+
+
+body {
+    background-color: black;
+    height: 80vh;
 }
 
 
@@ -23,6 +26,15 @@ a {
 img {
     max-width: 100%;
 
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1rem;
+    color: rgb(226, 138, 6);
+    
+    
 }
 
 
@@ -43,9 +55,10 @@ header {
 
 
 a:hover {
-    color: rgb(226, 138, 6);
+    color: #e28a06;
 
 }
+
 
 .formulario,
 .log {
@@ -60,16 +73,41 @@ a:hover {
 h1 a {
     color: rgb(226, 138, 6);
     font-size: 1.6rem;
-    display: none;
+    display: flex;
 }
 
 nav {
     display: none;
 }
 
+.dropdown-menu {
+    background-color: black;
+}
+
+.dropdown-menu a {
+    color: white;
+}
+
+
+.btn {
+
+    color: rgb(226, 138, 6) ;
+    border: solid  rgb(226, 138, 6) 2px;
+}
+
+.botones {
+    display: flex;
+    justify-content: end;
+    gap: 0.2rem;
+}
+ 
+
+
 
 
 @media (min-width:480px) {
+
+    
     header {
         flex-direction: row;
         justify-content: space-between;
@@ -87,7 +125,30 @@ nav {
 
 }
 
+
+
+@media (min-width: 576px) {
+    
+    h1 a {
+        color: rgb(226, 138, 6);
+        font-size: 1.6rem;
+        display: flex;
+    }
+    
+    nav {
+        display: flex;
+    }
+    
+}
+
+.usuario {
+    display: flex;
+}
+
+
 @media (min-width:768px) {
+
+    
     header {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -96,7 +157,10 @@ nav {
     }
 
     header h1 {
-        
+
+        color: rgb(226, 138, 6);
+        font-size: 1.6rem;
+        display: flex;
         text-align: left;
         align-items: center;
         font-size: 2rem;
@@ -106,14 +170,11 @@ nav {
     header nav {
         grid-column: span 3;
         text-align: center;
-
-    }
-
-    .barra {
-
         justify-content: center;
         
+
     }
+
 
     .formulario {
 
@@ -142,6 +203,10 @@ nav {
     }
 
 
+}
+
+.input-group {
+    font-size: 0.5rem;
 }
 
 
@@ -284,7 +349,7 @@ h3 {
 footer {
     border-top: 2px solid white;
     padding-top: 3 rem;
-    background-color: black;
+    
     color: white;
 }
 
@@ -292,7 +357,7 @@ footer a {
     color: white;
 }
 
-.footer-contenedor {
+.footer {
 
     display: flex;
     flex-direction: column;
@@ -302,7 +367,8 @@ footer a {
 }
 
 
-.footer-contenedor h4 {
+.footer h4 {
+    
     font-size: 0.8rem;
     text-decoration: underline;
     margin-bottom: 1rem;
@@ -310,12 +376,14 @@ footer a {
 
 
 
-.footer-contenedor h4,
-.footer-contenedor ul {
+.footer h4,
+.footer ul {
     text-align: center;
 }
 
-.footer-newsletter {
+.footer-newsletter,
+.footer-horario {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -324,12 +392,12 @@ footer a {
 
 footer input {
     padding: 0.3 rem;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 
 }
 
 @media (min-width:768px) {
-    .footer-contenedor {
+    .footer {
         flex-direction: row;
         justify-content: space-between;
         grid-template-columns: 1fr 1fr 1fr;
@@ -341,12 +409,12 @@ footer input {
 
 /* -------- Seccion contacto --------- */
 
-
+/* 
 .contenedor-contacto h2 {
     font-size: 2.5rem;
     text-align: center;
     padding: 1rem;
-}
+} */
 
 .contenedor-contacto {
 
@@ -446,4 +514,35 @@ i {
     flex-direction: column;
     font-size: 2rem;
     margin-bottom: 1rem;
+}
+
+
+/* -------------------------------------------- USUARIO ----------------------------------------------------- */
+
+.usuario {
+    color: rgb(226, 138, 6);
+    background-color: black;
+
+    font-size: 1.5rem;
+
+    display: block;
+  
+    padding: 2rem;
+    
+}
+
+.form-label {
+    font-size: 1.2rem;
+    
+}
+
+
+
+.form-check {
+    font-size: 1.2rem;
+}
+
+.container {
+    max-width: 80vh;
+
 }
