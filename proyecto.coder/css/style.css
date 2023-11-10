@@ -33,16 +33,14 @@ h2 {
     text-align: center;
     padding: 1rem;
     color: rgb(226, 138, 6);
-    
-    
+
+
 }
 
 
 /* ---Header--- */
 
 header {
-
-    background-color: black;
     color: white;
     border-bottom: 2px solid white;
     padding: 1rem;
@@ -89,25 +87,29 @@ nav {
 }
 
 
-.btn {
-
-    color: rgb(226, 138, 6) ;
-    border: solid  rgb(226, 138, 6) 2px;
+.dropdown-item:hover {
+    background-color: #e28a06;
 }
+
+.btn {
+    color: rgb(226, 138, 6);
+    border: solid rgb(226, 138, 6) 2px;
+}
+
 
 .botones {
     display: flex;
     justify-content: end;
     gap: 0.2rem;
 }
- 
+
 
 
 
 
 @media (min-width:480px) {
 
-    
+
     header {
         flex-direction: row;
         justify-content: space-between;
@@ -118,107 +120,94 @@ nav {
     .barra {
         display: flex;
         gap: 1rem;
-       
     }
-
-    
 
 }
 
 
 
-@media (min-width: 576px) {
-    
-    h1 a {
-        color: rgb(226, 138, 6);
-        font-size: 1.6rem;
-        display: flex;
-    }
-    
-    nav {
-        display: flex;
-    }
-    
+@media (min-width: 576px) {   header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr;
+
 }
 
-.usuario {
+header h1 {
+
+    color: rgb(226, 138, 6);
+    font-size: 1.6rem;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    font-size: 2rem;
+
+}
+
+header nav {
+    grid-column: span 3;
+    text-align: center;
+    justify-content: center;
+
+
+}
+
+
+.formulario {
+
+padding: 1rem;
+
+    justify-self: center;
+    align-self: center;
+    gap: 1rem;
+
     display: flex;
 }
 
 
-@media (min-width:768px) {
+.buscador {
+    background-color: black;
+    color: white;
+    border: #e28a06 solid 2px;
+    border-radius: 3px;
+}
 
-    
-    header {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 2fr 2fr;
+.log {
+    text-decoration: underline;
+    display: flex;
+    justify-self: end;
+    align-self: center;
+}
 
-    }
+h1 a {
+    color: rgb(226, 138, 6);
+    font-size: 1.6rem;
 
-    header h1 {
+}
 
-        color: rgb(226, 138, 6);
-        font-size: 1.6rem;
-        display: flex;
-        text-align: left;
-        align-items: center;
-        font-size: 2rem;
-        
-    }
-
-    header nav {
-        grid-column: span 3;
-        text-align: center;
-        justify-content: center;
-        
-
-    }
-
-
-    .formulario {
-
-        justify-self: center;
-        align-self: center;
-        gap: 1rem;
-
-        display: block;
-    }
-
-    .log {
-        text-decoration: underline;
-        display: flex;
-        justify-self: end;
-        align-self: center;
-    }
-
-    h1 a {
-        color: rgb(226, 138, 6);
-        font-size: 1.6rem;
-    
-    }
-    
-    nav {
-        display: flex;
-    }
+nav {
+    display: flex;
+}
 
 
 }
 
 .input-group {
-    font-size: 0.5rem;
+font-size: 0.5rem;
 }
-
 
 
 
 
 /* ---Contenedor--- */
-.contenedor {
-    max-width: 1500px;
-    margin: 0 auto;
 
+.contenedor {
+    margin: 0 auto;
+    max-width: 1500px;
 }
+   
+
+
 
 
 
@@ -239,7 +228,7 @@ nav {
 
 .index-titulo {
 
-    color:rgb(226, 138, 6) ;
+    color: rgb(226, 138, 6);
     font-size: 2.5rem;
     text-align: center;
 
@@ -315,7 +304,7 @@ h3 {
     }
 
     .boton-galeria {
-        grid-column: 2/3 ;
+        grid-column: 2/3;
 
     }
 
@@ -326,6 +315,7 @@ h3 {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
     }
+
     h1 {
         align-self: center;
         font-size: 2rem;
@@ -346,19 +336,15 @@ h3 {
 
 /* ---Footer--- */
 
+
 footer {
     border-top: 2px solid white;
     padding-top: 3 rem;
-    
     color: white;
 }
 
-footer a {
-    color: white;
-}
 
-.footer {
-
+.contenedor-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -366,24 +352,26 @@ footer a {
     padding: 1rem;
 }
 
+.footer-ayuda {
+    padding-top: 1rem;
+}
 
-.footer h4 {
-    
-    font-size: 0.8rem;
+
+.contenedor-footer h4 {
+    font-size: 1rem;
     text-decoration: underline;
     margin-bottom: 1rem;
 }
 
 
 
-.footer h4,
-.footer ul {
+footer h4,
+footer ul {
     text-align: center;
+    align-items: center;
 }
 
-.footer-newsletter,
-.footer-horario {
-    
+.footer-newsletter {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -391,13 +379,24 @@ footer a {
 }
 
 footer input {
+    padding: 0.3rem;
+    margin-top: 1rem;
+}
+
+
+
+footer input {
     padding: 0.3 rem;
-    /* margin-top: 1rem; */
+    text-align: center;
+   
 
 }
 
+
+
 @media (min-width:768px) {
-    .footer {
+
+    .contenedor-footer {
         flex-direction: row;
         justify-content: space-between;
         grid-template-columns: 1fr 1fr 1fr;
@@ -407,7 +406,7 @@ footer input {
 
 
 
-/* -------- Seccion contacto --------- */
+/* ------------------------------------------SECCION CONTACTO ----------------------------------------------------- */
 
 /* 
 .contenedor-contacto h2 {
@@ -449,14 +448,22 @@ footer input {
 }
 
 .boton-contacto {
+    font-size: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    border: 1px solid white;
 
     background-color: rgb(226, 138, 6);
-    padding: 0.2rem;
-    margin-top: 0.5rem;
+    padding: 1rem 1rem;
+    margin-top: 1rem;
+}
+
+.boton-contacto:hover {
+    background-color: black;
 }
 
 .redes {
-    
+
 
     align-items: center;
     padding: 2rem;
@@ -466,7 +473,7 @@ footer input {
     display: inline;
     font-size: 1.2rem;
     padding: 1rem;
-    
+
 }
 
 @media (min-width:768px) {
@@ -490,22 +497,22 @@ footer input {
     display: flex;
     flex-direction: column;
     color: white;
-    
+
 
 
 }
 
 
 .caja {
-    background-color:rgb(226, 138, 6) ;
+    background-color: rgb(226, 138, 6);
     gap: 1rem;
     border: 1px solid white;
     text-align: center;
 
-    
+
     padding: 2rem;
     margin: 2rem;
-    
+
 }
 
 
@@ -526,14 +533,14 @@ i {
     font-size: 1.5rem;
 
     display: block;
-  
+
     padding: 2rem;
-    
+
 }
 
 .form-label {
     font-size: 1.2rem;
-    
+
 }
 
 
