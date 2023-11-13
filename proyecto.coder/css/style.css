@@ -126,75 +126,76 @@ nav {
 
 
 
-@media (min-width: 576px) {   header {
+@media (min-width: 576px) {
+    header {
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr 2fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2fr 2fr;
 
-}
+    }
 
-header h1 {
+    header h1 {
 
-    color: rgb(226, 138, 6);
-    font-size: 1.6rem;
-    display: flex;
-    text-align: left;
-    align-items: center;
-    font-size: 2rem;
+        color: rgb(226, 138, 6);
+        font-size: 1.6rem;
+        display: flex;
+        text-align: left;
+        align-items: center;
+        font-size: 2rem;
 
-}
+    }
 
-header nav {
-    grid-column: span 3;
-    text-align: center;
-    justify-content: center;
-
-
-}
+    header nav {
+        grid-column: span 3;
+        text-align: center;
+        justify-content: center;
 
 
-.formulario {
-
-padding: 1rem;
-
-    justify-self: center;
-    align-self: center;
-    gap: 1rem;
-
-    display: flex;
-}
+    }
 
 
-.buscador {
-    background-color: black;
-    color: white;
-    border: #e28a06 solid 2px;
-    border-radius: 3px;
-}
+    .formulario {
 
-.log {
-    text-decoration: underline;
-    display: flex;
-    justify-self: end;
-    align-self: center;
-}
+        padding: 1rem;
 
-h1 a {
-    color: rgb(226, 138, 6);
-    font-size: 1.6rem;
+        justify-self: center;
+        align-self: center;
+        gap: 1rem;
 
-}
+        display: flex;
+    }
 
-nav {
-    display: flex;
-}
+
+    .buscador {
+        background-color: black;
+        color: white;
+        border: #e28a06 solid 2px;
+        border-radius: 3px;
+    }
+
+    .log {
+        text-decoration: underline;
+        display: flex;
+        justify-self: end;
+        align-self: center;
+    }
+
+    h1 a {
+        color: rgb(226, 138, 6);
+        font-size: 1.6rem;
+
+    }
+
+    nav {
+        display: flex;
+    }
 
 
 }
 
 .input-group {
-font-size: 0.5rem;
+    font-size: 0.5rem;
 }
 
 
@@ -206,7 +207,7 @@ font-size: 0.5rem;
     margin: 0 auto;
     max-width: 1500px;
 }
-   
+
 
 
 
@@ -385,7 +386,7 @@ footer input {
 footer input {
     padding: 0.3 rem;
     text-align: center;
-   
+
 
 }
 
@@ -551,9 +552,11 @@ i {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
     gap: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 1rem;
+    
 }
 
 h5 {
@@ -562,4 +565,35 @@ h5 {
 
 .card p {
     font-size: 1.2rem;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+}
+
+
+
+@media (min-width: 576px) {
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+        
+}
+
+
+
+
+@media (min-width:1200px) {
+    .productos {
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
