@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Play", sans-serif;
+}
+
+body {
+  background-color: black;
+  height: 80vh;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.contenedor {
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+footer {
+  border-top: 2px solid white;
+  padding-top: 3 rem;
+  color: white;
+}
+
+.contenedor-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.footer-ayuda {
+  padding-top: 1rem;
+}
+
+.contenedor-footer h4 {
+  font-size: 1rem;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+footer h4,
+footer ul {
+  text-align: center;
+  align-items: center;
+}
+
+.footer-newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+footer input {
+  text-align: center;
+  padding: 0.3rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .contenedor-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 1rem;
+  color: rgb(226, 138, 6);
+}
+
+header {
+  color: white;
+  border-bottom: 2px solid white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+a:hover {
+  color: #e28a06;
+}
+
+.formulario {
+  display: none;
+}
+
+.indicador {
+  lighting-color: rgb(226, 138, 6);
+}
+
+h1 a {
+  color: rgb(226, 138, 6);
+  font-size: 1.6rem;
+  display: flex;
+}
+
+nav {
+  display: none;
+}
+
+.dropdown-menu {
+  background-color: black;
+}
+
+.dropdown-menu a {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: #e28a06;
+}
+
+.btn {
+  color: rgb(226, 138, 6);
+  border: solid rgb(226, 138, 6) 2px;
+}
+
+.botones {
+  display: flex;
+  justify-content: end;
+  gap: 0.5rem;
+}
+
+@media (min-width: 480px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .barra {
+    display: flex;
+    gap: 1rem;
+  }
+}
+@media (min-width: 576px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr;
+  }
+  header h1 {
+    color: rgb(226, 138, 6);
+    font-size: 1.6rem;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    font-size: 2rem;
+  }
+  header nav {
+    display: flex;
+    grid-column: span 3;
+    text-align: center;
+    justify-content: center;
+  }
+  .formulario {
+    padding: 1rem;
+    justify-self: center;
+    align-self: center;
+    gap: 1rem;
+    display: flex;
+  }
+  .buscador {
+    background-color: black;
+    color: white;
+    border: #e28a06 solid 2px;
+    border-radius: 3px;
+  }
+}
+.input-group {
+  font-size: 0.5rem;
+}
+
+.portada {
+  padding: 2rem 2rem;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.index-texto {
+  padding-bottom: 3rem;
+  color: white;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  border-bottom: 1px solid white;
+}
+
+h3 {
+  font-size: 1.8rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.galeria {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  background-color: black;
+}
+.galeria .boton-galeria {
+  border: 2px solid rgb(226, 138, 6);
+  background-color: rgb(226, 138, 6);
+  border-radius: 5px;
+  padding: 1rem 1rem;
+  margin-top: 1rem;
+  display: inline-block;
+}
+.galeria .boton-galeria:hover {
+  background-color: black;
+}
+@media (min-width: 768px) {
+  .galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .boton-galeria {
+    grid-column: 2/3;
+  }
+  .portada {
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .index-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    border-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  h1 {
+    align-self: center;
+    font-size: 2rem;
+  }
+  .barra {
+    font-size: 1.2rem;
+  }
+}
+.contenedor-contacto {
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-contacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  gap: 1rem;
+}
+
+.celdas {
+  color: white;
+  background-color: black;
+  border: 3px solid rgb(226, 138, 6);
+  border-radius: 5px;
+  gap: 1rem;
+  padding: 0.2rem;
+}
+
+.espacio-consulta {
+  padding: 3rem;
+}
+
+.redes {
+  align-items: center;
+  padding: 2rem;
+}
+.redes i {
+  display: inline;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .redes ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 5rem;
+  }
+}
+.cajas-pagos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  align-items: center;
+  max-width: 60%;
+}
+
+.caja {
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(226, 138, 6);
+  gap: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  padding: 2rem;
+  margin: 2rem;
+}
+.caja i {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+}
+.card p {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 576px) {
+  .productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .productos {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.usuario {
+  color: rgb(226, 138, 6);
+  background-color: black;
+  font-size: 1.5rem;
+  display: block;
+  padding: 2rem;
+}
+
+.form-label {
+  font-size: 1.2rem;
+}
+.form-label-check {
+  font-size: 1.2rem;
+}
+
+.container {
+  max-width: 80vh;
+}
+
+/*# sourceMappingURL=styles.css.map */

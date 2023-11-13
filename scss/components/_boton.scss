@@ -1,0 +1,10 @@
+.btn {
+    color: $color-naranja;
+    border: solid $color-naranja 2px;
+    border: 2px solid $color-naranja;
+    background-color: $color-naranja;
+    border-radius: 5px;
+    &:hover {
+        background-color: $color-negro;
+    }
+}

@@ -1,80 +1,144 @@
-h1 {
-    color: rgb(226, 138, 6);
-    font-size: 1.4rem;
-}
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1rem;
+    color: $color-naranja;
 
+
+}
 header {
-    background-color: black;
-    color: white;
-    border-bottom: 2px solid white;
+    color: $color-blanco;
+    border-bottom: 2px solid $color-blanco;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
 
-a:hover {
-    color: rgb(226, 138, 6);
-}
-
-.formulario,
-.log {
-    display: none;
-}
-
-.indicador {
-    lighting-color: rgb(226, 138, 6);
-}
-
-.barra-extendida {
-    display: none;
-}
-
-@media (min-width: 480px) {
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .barra {
+    h1 a {
+        color: $color-naranja;
+        font-size: 1.6rem;
         display: flex;
-        gap: 1rem;
     }
-}
+    
+    & a:hover { color: $color-naranja;
 
-@media (min-width: 768px) {
-    header {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    header h1 {
-        text-align: left;
-    }
-
-    header nav {
-        grid-column: span 3;
-        text-align: center;
-    }
-
-    .barra {
-        padding-top: 2rem;
-        justify-content: center;
     }
 
     .formulario {
+        display: none;
+    }
+
+    @include mq-sm {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .barra {
+            display: flex;
+            gap: 1rem;
+        }
+    }
+    
+}
+
+
+
+
+.indicador {
+    lighting-color: $color-naranja;
+}
+
+
+
+
+
+.dropdown-menu {
+    background-color: $color-negro;
+    & a {
+        color: $color-blanco;
+
+    }
+
+    .dropdown-item:hover {
+        background-color: $color-negro;
+        }
+        
+}
+
+
+
+.botones {
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+}
+
+
+
+
+@media (min-width:480px) {
+
+
+}
+
+
+
+@media (min-width: 576px) {
+    header {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2fr 2fr;
+
+        header h1 {
+
+            color: $color-naranja;
+            font-size: 1.6rem;
+            display: flex;
+            text-align: left;
+            align-items: center;
+            font-size: 2rem;
+    
+        }
+
+    }
+
+   
+
+    header nav {
+        display: flex;
+        grid-column: span 3;
+        text-align: center;
+        justify-content: center;
+
+
+    }
+
+
+    .formulario {
+
+        padding: 1rem;
+
         justify-self: center;
         align-self: center;
         gap: 1rem;
-        display: block;
+
+        display: flex;
     }
 
-    .log {
-        text-decoration: underline;
-        display: flex;
-        justify-self: end;
-        align-self: center;
+
+    .buscador {
+        background-color: $color-negro;
+        color: $color-blanco;
+        border: $color-naranja 2px;
+        border-radius: 3px;
     }
+
+
+
+}
+
+.input-group {
+    font-size: 0.5rem;
 }

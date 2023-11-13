@@ -1,0 +1,52 @@
+.productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    gap: 2rem;
+    padding: 1rem;
+
+}
+
+h5 {
+    font-size: 1.8rem;
+}
+
+
+
+.card {
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+@media (min-width: 576px) {
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+}
+
+
+
+
+@media (min-width:1200px) {
+    .productos {
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
