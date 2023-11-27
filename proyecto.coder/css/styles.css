@@ -29,6 +29,8 @@ img {
   max-width: 1500px;
 }
 
+
+/* ---------------------FOOTER------------------------- */
 footer {
   border-top: 2px solid white;
   padding-top: 3 rem;
@@ -86,6 +88,9 @@ h2 {
   color: rgb(226, 138, 6);
 }
 
+
+/* ------------------------------------------HEADER------------------------------------ */
+
 header {
   color: white;
   border-bottom: 2px solid white;
@@ -133,6 +138,7 @@ nav {
 .btn {
   color: rgb(226, 138, 6);
   border: solid rgb(226, 138, 6) 2px;
+  transition: 0.3s ease;
 }
 
 .botones {
@@ -190,6 +196,8 @@ nav {
   font-size: 0.5rem;
 }
 
+
+/* -----------------------------------MAIN INDEX------------------------------------------------- */
 .portada {
   padding: 2rem 2rem;
   background-color: black;
@@ -229,6 +237,7 @@ h3 {
   padding: 1rem 1rem;
   margin-top: 1rem;
   display: inline-block;
+  transition: 0.3s ease;
 }
 .galeria .boton-galeria:hover {
   background-color: black;
@@ -272,6 +281,8 @@ h3 {
     font-size: 1.2rem;
   }
 }
+
+/* ----------------------------------CONTACTO-------------------------------------- */
 .contenedor-contacto {
   align-items: center;
   background-color: black;
@@ -319,6 +330,8 @@ h3 {
     gap: 5rem;
   }
 }
+
+/* -----------------MEDIOS DE PAGO---------------------------------- */
 .cajas-pagos {
   display: flex;
   flex-direction: column;
@@ -345,6 +358,8 @@ h3 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+
+/* -------------------------PRODUCTOS------------------------- */
 
 .productos {
   display: flex;
@@ -387,6 +402,8 @@ h5 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
+
+/* -------------------------USUARIO--------------------------- */
 .usuario {
   color: rgb(226, 138, 6);
   background-color: black;

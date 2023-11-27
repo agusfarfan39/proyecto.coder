@@ -40,11 +40,12 @@ h3 {
         padding: 1rem 1rem;
         margin-top: 1rem;
         display: inline-block;
-        
+        transition: 0.3s ease;
+
         &:hover {
             background-color: $color-negro;
         }
-    
+
     }
 
     @include mq-md {
@@ -52,7 +53,7 @@ h3 {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
     }
-    
+
 }
 
 
@@ -61,7 +62,7 @@ h3 {
 
 @media (min-width:768px) {
 
-  
+
 
     .boton-galeria {
         grid-column: 2/3;
